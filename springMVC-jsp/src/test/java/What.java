@@ -9,5 +9,7 @@ public class What {
         System.out.println("Hello,Git!");
         System.out.println("Hello,Git2!");
         System.out.println("Hello,Git3! by master");
+        System.out.println("Hello,Git4! by hot-fix");
+        System.out.println("Hello,Git5! by now");
     }
 }
