@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>文件上传与下载</title>
+</head>
+<body>
+<br>
+<!---->
+<form id="form" th:action="@{/fileUp}" method="post" enctype="multipart/form-data">
+    请选择上传文件：<input type="file" name="file" id="fileUp"><br>
+    <input type="submit" value="上传图片">
+</form>
+<a th:href="@{/fileDown}">下载图片</a>
+<br>
+</body>
+</html>
+<script type="text/javascript" th:src="@{/static/js/vue.js}"></script>
+<script type="text/javascript" th:src="@{/static/js/axios.min.js}"></script>
+<script type="text/javascript">
+</script>

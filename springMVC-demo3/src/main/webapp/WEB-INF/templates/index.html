@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+    <script type="text/javascript" src="../script/jquery-1.7.2.js"></script>
+</head>
+<body>
+<h1>首页</h1><br>
+<h2>一共有5种向request域对象共享数据的方法</h2>
+1.<a th:href="@{/testRequestByServletAPI}">通过servletAPI向request域对象共享数据(建议使用)</a><br>
+2.<a th:href="@{/testModelAndView}">通过ModelAndView向request域对象共享数据</a><br>
+3.<a th:href="@{/testModel}">通过Model向request域对象共享数据</a><br>
+4.<a th:href="@{/testMap}">通过Map向request域对象共享数据</a><br>
+5.<a th:href="@{/testModelMap}">通过ModelMap向request域对象共享数据</a><br>
+以下是session域对象共享数据<br>
+<a th:href="@{/testSession}">通过servletAPI向session域对象共享数据</a><br>
+以下是application域对象共享数据<br>
+<a th:href="@{/testApplication}">通过servletAPI向application域对象共享数据</a>
+<br>
+以下是视图内容：<br>
+<a th:href="@{/testThymeleafView}">测试Thymeleaf</a><br>
+<a th:href="@{/testForward}">这个也跳转到测试Thymeleaf，使用转发视图</a><br>
+<a th:href="@{/testRedirect}">这个也跳转到测试Thymeleaf，使用重定向视图</a>
+<br>
+</body>
+</html>

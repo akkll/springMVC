@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>主页</title>
+</head>
+<body>
+这是主页
+<a th:href="@{/ava/testAnt?username=1321}">跳转到testAnt</a><br>
+<a th:href="@{/testpath/2/admin}">支持路径占位符</a><br>
+<a th:href="@{/param}">测试请求参数</a><br>
+<a th:href="@{/testServletAPI(username='abc', password=123456)}">测试使用servletAPI获取请求参数</a><br>
+<a th:href="@{/testParam(username='你好', password=123456)}">测试使用控制器的形参获取请求参数</a><br>
+<form th:action="@{/testParam}" method="post">
+    用户名：<input type="text" name="user_name"><br>
+    密码：<input type="password" name="password"><br>
+    爱好：<input type="checkbox" name="hobby" value="a">a
+    <input type="checkbox" name="hobby" value="b">b
+    <input type="checkbox" name="hobby" value="c">c<br>
+    <input type="submit"  value="测试使用控制器形参获取参数"><br>
+</form>
+</body>
+</html>
+<style>
+    form{
+        border: 1px solid black;
+    }
+</style>
